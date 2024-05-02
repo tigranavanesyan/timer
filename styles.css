@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(97, 89, 89);
+    padding: 10px;
+}
+main{
+    margin: 30px auto;
+    height: 80vh;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.progressBar{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+.fill{
+    width: 100%;
+    background-color: rgb(124, 177, 245);
+    /* transition: all .1s ease; */
+}
+.timer-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.timer-input input{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.countdown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+}
+.buttons button{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.pause-play{
+    width: 100%;
+}
+.pause-play button{
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+.pause-play button.show{
+    display: flex;
+}
+.stop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
